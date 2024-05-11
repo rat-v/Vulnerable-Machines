@@ -72,4 +72,21 @@ I verified that the password did change by logging in on the other machine.
 This was really exciting as this was my first ever machine that I actually worked on and successfully gained remote root access to. I had used my knowledge in Nmap and also spontaneously introduced myself to Metasploit to exploit a vulnerability I found.
 This motivates me a lot, making me want to learn so much more. 
 
+### Trying to understand payloads more
+Since I really just picked the payload at random, I didn't feel that great about it. I wanted to genuinely understand what the differences were, so I tried running the same exploit with different payloads. 
+
+Running with a different payload led to a command shell session not being created, so it made it even more important for me to learn about which payload to use. 
+
+![image](https://github.com/rat-v/Vulnerable-Machines/assets/169432484/cf2263e7-62b8-4398-9192-6f9d1c8f941c)
+
+I had some feeling it had to do with the fact that it involved Telnet and the machine was not running any telnet service, so I tried another different payload and a command shell session was able to be created.
+
+![image](https://github.com/rat-v/Vulnerable-Machines/assets/169432484/b8fd73ff-6bf8-4cdb-afdc-981128968f8c)
+
+Just to confirm my feeling about the Telnet thing, I tried another separate payload involving Telnet, and it did not work.
+
+![image](https://github.com/rat-v/Vulnerable-Machines/assets/169432484/72a2945e-aa25-48d9-a43f-5cc4ec673785)
+
+Then I just proceeded to mess around with different payloads, and then have myself read more about different types of payloads and how to choose.
+
 
